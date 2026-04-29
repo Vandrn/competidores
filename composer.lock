@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d90ff54dafd0bb5ee98d5cabc2fce1ac",
+    "content-hash": "5c8f0dce238cf83e1f1f2846ddfc0636",
     "packages": [
         {
             "name": "brick/math",
@@ -706,16 +706,16 @@
         },
         {
             "name": "google/cloud-bigquery",
-            "version": "v1.34.0",
+            "version": "v1.34.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-cloud-php-bigquery.git",
-                "reference": "caa49232161032f415f0937ece1634e6647af718"
+                "reference": "3104df011337f66742885e0f7fc10f52161a520c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-cloud-php-bigquery/zipball/caa49232161032f415f0937ece1634e6647af718",
-                "reference": "caa49232161032f415f0937ece1634e6647af718",
+                "url": "https://api.github.com/repos/googleapis/google-cloud-php-bigquery/zipball/3104df011337f66742885e0f7fc10f52161a520c",
+                "reference": "3104df011337f66742885e0f7fc10f52161a520c",
                 "shasum": ""
             },
             "require": {
@@ -756,9 +756,9 @@
             ],
             "description": "BigQuery Client for PHP",
             "support": {
-                "source": "https://github.com/googleapis/google-cloud-php-bigquery/tree/v1.34.0"
+                "source": "https://github.com/googleapis/google-cloud-php-bigquery/tree/v1.34.1"
             },
-            "time": "2025-08-01T22:55:44+00:00"
+            "time": "2025-09-05T22:58:48+00:00"
         },
         {
             "name": "google/cloud-core",
@@ -2326,6 +2326,54 @@
                 "source": "https://github.com/thephpleague/flysystem/tree/3.30.0"
             },
             "time": "2025-06-25T13:29:59+00:00"
+        },
+        {
+            "name": "league/flysystem-google-cloud-storage",
+            "version": "3.30.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/flysystem-google-cloud-storage.git",
+                "reference": "54a317aa1f6b6ef1b19e14ccf12930d8f95c75a7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/flysystem-google-cloud-storage/zipball/54a317aa1f6b6ef1b19e14ccf12930d8f95c75a7",
+                "reference": "54a317aa1f6b6ef1b19e14ccf12930d8f95c75a7",
+                "shasum": ""
+            },
+            "require": {
+                "google/cloud-storage": "^1.23",
+                "league/flysystem": "^3.10.0",
+                "league/mime-type-detection": "^1.0.0",
+                "php": "^8.0.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "League\\Flysystem\\GoogleCloudStorage\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Frank de Jonge",
+                    "email": "info@frankdejonge.nl"
+                }
+            ],
+            "description": "Google Cloud Storage adapter for Flysystem.",
+            "keywords": [
+                "Flysystem",
+                "filesystem",
+                "gcs",
+                "google cloud storage"
+            ],
+            "support": {
+                "source": "https://github.com/thephpleague/flysystem-google-cloud-storage/tree/3.30.0"
+            },
+            "time": "2025-01-26T14:03:02+00:00"
         },
         {
             "name": "league/flysystem-local",

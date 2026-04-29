@@ -29,6 +29,17 @@ return [
     */
 
     'disks' => [
+        'gcs' => [
+            'driver' => 'gcs',
+            'project_id' => env('BIGQUERY_PROJECT_ID'),
+            'bucket' => env('GOOGLE_CLOUD_STORAGE_BUCKET'),
+            'path_prefix' => env('GCP_BUCKET_PATH', null), // carpeta ej. competencia
+            'visibility' => 'public', // o 'private' si luego usarás signed URLs
+            'key_file' => env('BIGQUERY_KEY_FILE') && file_exists(env('BIGQUERY_KEY_FILE'))
+                ? env('BIGQUERY_KEY_FILE')
+                : null, // si usas GOOGLE_APPLICATION_CREDENTIALS
+        ],
+
 
         'local' => [
             'driver' => 'local',
