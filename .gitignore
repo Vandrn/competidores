@@ -17,6 +17,7 @@
 /public/hot
 /public/storage
 /storage/claves/.json
+/storage/
 /storage/pail
 /vendor
 Homestead.json
